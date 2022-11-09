@@ -10,11 +10,11 @@
  */
 const config = {
   type: Phaser.AUTO,
-  width: 1920,
-  height: 1080,
+  width: 1364,
+  height: 767,
   // set background colour
   backgroundColor: 0x5f6e7a,
 };
 
-const game = new Phaser.game(config);
+const game = new Phaser.Game(config);
 console.log(game);
