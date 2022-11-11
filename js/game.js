@@ -5,10 +5,10 @@
 // Created on: Nov 2022
 // This is a Phaser3 game configuration file
 
-import SplasheScene from './splashScene.js'
+import SplasheScene from "./splashScene.js";
 
 // Our game scene
-const splashScene = new SplasheScene()
+const splashScene = new SplasheScene();
 
 /**
  *game scene
@@ -29,14 +29,14 @@ const config = {
     mode: Phaser.Scale.FIT,
     // we place it in the middle of the page
     autoCenter: Phaser.Scale.CENTER_BOTH,
-  }
-}
+  },
+};
 
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(config);
 
 //load scenes
 // NOTE: remebr any "key" is global and CAN NOT be reused!
-game.scene.add('splashScene', splashScene)
+game.scene.add("splashScene", splashScene);
 
 //start title
-game.scene.start('splashScene')
+game.scene.start("splashScene");
