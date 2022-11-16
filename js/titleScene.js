@@ -3,11 +3,11 @@
 // Copyright (c) 2022 Julienka Sohal All rights reserved
 // Created by: Julienka Sohal
 // Created on: Nov 2022
-// This is a splash Scene
+// This is a Title Scene
 
-class SplashScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   constructor() {
-    super({ key: "splashScene" });
+    super({ key: "titleScene" });
   }
 
   init(data) {
@@ -15,14 +15,12 @@ class SplashScene extends Phaser.Scene {
   }
 
   preload() {
-    console.log("Splash Scene");
+    console.log("Title Scene");
   }
 
   create(data) {}
 
-  update(time, delta) {
-    this.scene.switch('titleScene')
-  }
+  update(time, delta) {}
 }
 
-export default SplashScene;
+export default TitleScene;
