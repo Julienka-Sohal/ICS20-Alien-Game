@@ -8,7 +8,7 @@
 class TitleScene extends Phaser.Scene {
   constructor() {
     super({ key: "titleScene" })
-    this.splashSceneBackhroundImage = null
+    this.titleSceneBackgroundImage = null
     this.titleSceneText = null
     this.titleSceneTextStyle = {
       font: "200px Times",
@@ -25,6 +25,7 @@ class TitleScene extends Phaser.Scene {
       console.log("Title Scene");
       this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg")
     }
+  
     create(data) {
       this.titleSceneBackground = this.add.sprite(0, 0, "titleSceneBakcground").setScale(2.75)
       this.titleSceneBackgroundImage.x = 1920 / 2
@@ -32,7 +33,7 @@ class TitleScene extends Phaser.Scene {
       this.titleSceneText = this.add.text(1920 /2, 1080 / 2, + 350, "Space Aliens", this.titleSceneTextStyle).setOrigin(0.5)
     }
     
-    update(time, delta) {}}
+    update(time, delta) {}
 }
 
 export default TitleScene
