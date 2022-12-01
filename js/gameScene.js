@@ -25,6 +25,5 @@ class GameScene extends Phaser.Scene {
   update(time, delta) {
     //pass
   }
-
-  export default GameScene
 }
+  export default GameScene
